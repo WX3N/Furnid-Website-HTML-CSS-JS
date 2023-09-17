@@ -1,0 +1,438 @@
+:root{
+   --lime:#D8E9A8;
+   --white:#fff;
+   --grey:#BBBBBB;
+   --black:#191A19;
+   --darkgreen:#1E5128;
+   --green:#4E9F3D;
+   --aqua:#346751;
+
+ }
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; 
+   padding:0;
+   text-decoration: none;
+   transition: .2s;
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 10;
+}
+
+body{
+   background-color: var(--black);
+   overflow-x: hidden;
+}
+
+section{
+   margin:0 auto;
+   padding:15px;
+}
+
+
+header .area{
+   background-color: var(--darkgreen);
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo{
+   margin-left: 15px;
+   font-size: 30px;
+   color:var(--white);
+}
+
+.category{
+   display: none;
+}
+
+.navbar ul a.btn{
+   color: var(--white);
+}
+
+.navbar ul a.btn:hover{
+   color: var(--lime);
+}
+
+header .navbar a{
+   padding: 0px 10px 0px 10px;
+   margin-left: 30px;
+   color:var(--grey);
+   font-size: 20px;
+}
+
+.navbar a:hover{
+   color:var(--lime);
+}
+
+.area{
+   display: flex;
+   justify-content: space-between;
+}
+
+.area .navbar ul .btn{
+   padding-right: 30px;
+}
+
+.deskripsi h2{
+   /* background-color: #00E77F; */
+   padding-top: 10vw;
+   padding-left: 50px;
+   font-size: 5vw;
+   color:var(--green);
+}
+
+.home{
+   padding-top: 20vh;
+}
+
+.home .area img{
+   background-color: var(--lime);
+
+   width: 50vw;
+   border-radius: 20px;
+}
+
+
+
+.best-product .deskripsi{
+   text-align: center;
+}
+
+.best-product .area{
+   flex-direction: column;
+}
+
+.best-product .area .product{
+   display: flex;
+   flex-direction: row;
+}
+
+.card{
+   padding: 2vw;
+   flex-direction: column;
+   text-align: center;
+   
+}
+
+.card a{
+   color: var(--grey);
+   font-size: 2vw;
+   text-decoration: none;
+   padding-bottom: 4vw;
+}
+
+.card a:hover{
+   color: var(--green);
+   font-size: 2vw;
+   text-decoration: none;
+}
+
+.card p{
+   font-size: 1vw;
+   color: var(--grey);
+}
+
+.product img{
+   border-radius: 20%;
+   width: 20vw;
+   height: 20vw;
+}
+
+.best-product .bagian{
+   display: flex;
+   flex-direction: row;
+}
+
+.hover-effect:hover .gambar{
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+
+.aboutus .area{
+   padding-top: 7vw;
+   padding-bottom: 5vw;
+   display: flex;
+}
+
+.aboutus h2{
+   font-size: 5vw;
+   padding: 0px;
+   padding-left: 5vw;
+}
+
+.aboutus .atas{
+   padding: 0;
+   background-image: url(../image/about-us\ 1.jpg);
+   background-size: 100vw;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   background-attachment: fixed;
+   
+}
+
+.atas h2{
+   padding-right: 5vw;
+   padding-top: 10vw;
+   color: var(--aqua);
+}
+.atas span{
+   padding-top: 3vw;
+   padding-bottom: 10vw;
+   color: var(--black);
+   width: 50%;
+   text-align: center;
+   font-size: 1.5vw;
+   font-weight: bolder;
+   color: var(--black);
+}
+
+.aboutus p{
+   width: 80%;
+   text-align: justify;
+   padding: 0px;
+   padding-left: 5vw;
+   padding-top: 2vw;
+   font-size: 1.5vw;
+   color: var(--grey);
+}
+
+.aboutus .area img{
+   width: 40vw;
+   border-radius: 20px;
+}
+
+.full{
+   background-color: var(--darkgreen)
+}
+
+.footer{
+   background-color: var(--darkgreen);
+   padding-top: 2vw;
+   padding-bottom: 2vw;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer h2{
+   color: var(--lime);
+}
+
+.sosmed a{
+   margin: 1vw;
+   font-size: 2vw;
+   width: 4vw;
+   height: 3vw;
+   padding-top: 1vw;
+   border-radius: 50%;
+   color: var(--white);
+   background-color:var(--black) ;
+}
+
+.sosmed a:hover{
+   color: var(--black);
+   background-color: var(--grey);
+}
+
+.credit{
+   border-top: .1vw solid var(--white);
+   padding-top: 2vw;
+   font-size: 1.5vw;
+   padding-bottom: 1vw;
+}
+
+.credit span{
+   color: var(--lime);
+   padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 650px){
+   .category span:nth-child(2){
+      transform-origin: 0 0;
+   }
+
+   .category input:checked ~ span:nth-child(2){
+      transform: rotate(45deg);
+   }
+
+   .category span:nth-child(24){
+      transform-origin: 0 100%;
+   }
+
+   .category input:checked ~ span:nth-child(4){
+      transform: rotate(-45deg) translate(1px,-7px);
+   }   
+
+   .category input:checked ~ span:nth-child(3){
+      opacity: 0;
+      transform: scale(0);
+   }   
+
+   .navbar ul{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      height: 40vh;
+      top: 42px;
+      right: 0px;
+   }
+
+   header .logo{
+      font-size: 7vw;
+      z-index: 1;
+   }
+
+   .navbar ul{
+      padding: 7vw;
+      background-color: var(--darkgreen);
+      display: flex;
+      justify-content: space-evenly;
+      top: 10px;
+      padding-bottom: 10px;
+      transform: translateX(100vw);
+      transition: all 0.4s;
+   }
+
+   .navbar ul a.btn{
+      color: var(--white);
+   }
+
+   .navbar ul a.btn:hover{
+      color: var(--lime);
+   }
+
+   .navbar ul.muncul{
+      transform: translateX(0);
+   }
+
+   .category{
+      display: flex;
+      flex-direction: column;
+      height: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+   }
+
+   .category input{
+      position: absolute;
+      width: 22px;
+      height: 28px;
+      top: -5px;
+      left: -1px;
+      opacity: 0.0;
+      cursor: pointer;
+      z-index: 1;
+      
+   }
+
+   .category span{
+      display: block;
+      width: 20px;
+      height: 3px;
+      background-color: var(--white);
+      border-radius: 3px;
+      transition: 0.4s;
+   }
+
+   .home .area{
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+   }
+
+   .home .area h2{
+      padding: 0vw;
+      padding-bottom: 2vw;
+      font-size: 7vw;
+   }
+
+   .home .area img{
+      background-color: var(--black);
+      padding: 2vw;
+      width: 90vw;
+   }
+
+   .atas h2{
+      font-size: 7vw;
+   }
+
+   .atas span{
+      font-size: 2.4vw;
+   }
+
+   .aboutus .area{
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+   }
+
+   .best-product h2{
+      padding-left: 5vw;
+   }
+
+   .best-product .product{
+      padding-left: 5vw;
+   }
+
+   .best-product .bagian{
+      flex-direction: column;
+   }
+
+   .best-product .card img{
+      width: 40vw;
+      height: 40vw;
+   }
+
+   .best-product .card{
+      padding-top: 5vw;
+   }
+
+   .best-product a{
+      font-size: 5vw;
+   }
+
+   .best-product p{
+      font-size: 3vw;
+   }
+
+   .aboutus{
+      padding-bottom: 5vw;
+   }
+
+   .aboutus .area h2{
+      padding-top: 2vw;
+      font-size: 5vw;
+   }
+
+   .aboutus .area p{
+      font-size: 3vw;
+   }
+   .aboutus .area img{
+      background-color: var(--black);
+      padding: 2vw;
+      width: 90vw;
+   }
+
+   .sosmed a{
+      font-size: 5vw;
+      width: 9vw;
+      height: 7vw;
+      padding-top: 2vw;
+   }
+
+   .credit{
+      font-size: 3vw;
+   }
+
+}

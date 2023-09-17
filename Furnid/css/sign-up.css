@@ -1,0 +1,220 @@
+:root{
+   --lime:#D8E9A8;
+   --white:#fff;
+   --grey:#BBBBBB;
+   --black:#191A19;
+   --darkgreen:#1E5128;
+   --green:#4E9F3D;
+   --aqua:#346751;
+
+ }
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; 
+   padding:0;
+   text-decoration: none;
+   transition: .2s;
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 10;
+}
+
+body{
+   background-color: var(--black);
+   overflow-x: hidden;
+}
+
+section{
+   margin:0 auto;
+   padding:15px;
+}
+
+header .area{
+   background-color: var(--darkgreen);
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo{
+   text-align: center;
+   font-size: 40px;
+   color:var(--white);
+   padding-left: 43vw;
+}
+
+
+form{
+   padding-top: 100px;
+}
+
+form h2{
+   padding-left:42vw;
+   color: var(--green);
+}
+
+.box{
+   padding-top: 2vw;
+   padding-left: 35vw;
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.box input{
+   padding: .3vw;
+   border: var(--grey) .2vw solid ;
+   border-radius: 1vw;
+}
+
+.box span{
+   padding: .3vw;
+   color: var(--grey);
+}
+
+form .btn{
+   /* sign in geser kiri */
+   padding-top: 3vw;
+   padding-left: 45vw;
+}
+
+form a{
+   color: #191A19;
+   padding: .5vw;
+   align-items: center;
+   border-radius: 1vw;
+   background-color: var(--grey);
+   font-size: 1.5vw;
+   text-decoration: none;
+}
+
+form .btn a:hover{
+   color: var(--grey);
+   background-color: var(--black);
+   border: var(--grey) solid 1px;
+}
+
+.login{
+   padding-top: 3vw;
+   padding-left: 39vw;
+   color: var(--grey);
+}
+
+form .login a{
+   color: var(--grey);
+   font-weight: bolder;
+   text-decoration: underline;
+   background-color: var(--black);
+}
+
+form .login a:hover{
+   color: var(--lime);
+}
+
+
+.credit{
+   background-color: var(--darkgreen);
+   padding-top: 1vw;
+   text-align: center;
+   padding-bottom: 1vw;
+}
+
+.credit span{
+   color: var(--lime);
+}
+
+
+@media screen and (max-width: 1050px){
+   .box{
+      padding-left: 37vw;
+      width: 35%;
+   }
+
+   form .login a{
+      font-size: 2vw;
+   }
+
+   form .btn{
+      padding-left: 47vw;
+
+   }
+
+   .btn a{
+      font-size: 2.5vw;
+   }
+}
+
+@media screen and (max-width: 780px){
+   .header .logo{
+      padding-left: 40vw;
+   }
+
+   form h2{
+      padding-left: 39vw;
+   }
+
+   .box{
+      padding-left: 30vw;
+      width: 45%;
+   }
+
+   .login{
+      padding-left: 37vw;
+   }
+
+   form .btn{
+      padding-left: 45vw;
+   }
+
+   form .login a{
+      font-size: 2.5vw;
+   }
+
+   .btn a{
+      font-size: 3vw;
+      
+   }
+}
+
+@media screen and (max-width: 550px){
+   .header .logo{
+      padding-left: 35vw;
+   }
+
+   form h2{
+      padding-left: 34vw;
+   }
+
+   .box {
+      padding-left: 25vw;
+      width: 50%;
+   }
+
+   form .login a{
+      font-size: 3vw;
+   }
+
+   .login{
+      padding-left: 30vw;
+   }
+}
+
+@media screen and (max-width: 500px){
+   .box{
+      padding-left: 20vw;
+      width: 60%;
+   }
+}
+
+@media screen and (max-width: 405px){
+   .box{
+      padding-left: 15vw;
+      width: 70%;
+   }
+}
